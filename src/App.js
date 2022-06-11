@@ -1,14 +1,20 @@
 import './App.css';
-
+import React from "react";
+import MyHeader from "./MyHeader";
+import Counter from "./Counter";
+import Container from "./Container";
 function App() {
-    let sex = 'sex';
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Hello React (sex)</h2>
-      </header>
-    </div>
-  );
+    let adam = 'Adam';
+
+    return (
+        <Container>
+            <div className="App">
+                <MyHeader/>
+                <Counter initialValue={5}/>
+            </div>
+        </Container>
+
+    );
 }
 
 export default App;
